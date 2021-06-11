@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+      font-weight: 400;
+}
+/* ----------------------------------------------------------------------HEADER--------------------------------------------------------------- */
+header{
+    height: 150px;
+    background-color: transparent;
+}
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 5px 4px -4px gray;
+    margin-bottom: -15em;
+    position: fixed;
+}
+.navbar{
+    height: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.left-content{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-content{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    margin: 0 .5em;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+
+.hide-desk{
+    display: none;
+}
+img{
+    max-width: 100%;
+    max-height: 9em;
+    padding-left: 2em;
+}
+
+/* ----------------------------------------------------------------------Section--------------------------------------------------------------- */
+.section-container{
+    height: 25em;
+    margin-top: 0;
+    background-color: #7ED957;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.left-content > button {
+    margin: 1.5em 0 0 .5em;
+    padding: .6em 1.4em;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all .7s;
+  }
+  .left-content > button:hover{
+    border: 1px solid #367013;
+    color: #367013;
+    transition: .7s ease-in-out;
+  }
+  .left-content > button a {
+      text-decoration: none;
+      color: white;
+  }
+  .left-content > button a:hover{
+    color: #367013;
+    transition: .7s ease-in-out; 
+  }
+.left-content > button a > span{
+    font-size: 2rem;
+}
+.right-content > h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+}
+.right-content > p{
+    font-size: 1.125rem;
+    font-weight: 200;
+    color: white;
+}
+.img-section{
+    width: 100%;
+    margin: 0;
+}
+.section-img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 25em;
+    margin-left: -2em;
+}
+/* ----------------------------------------------------------------------Main--------------------------------------------------------------- */
+.main{
+    background-color: red;
+    height: 25em;
+    width: 100%;
+    max-width: 100%;
+}
+/* ----------------------------------------------------------------------Mobile Design--------------------------------------------------------------- */
+@media only screen and (max-width:480px) and (min-width: 0px){
+    header{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      .navbar{
+        width: 100%;
+      }
+      .hide-mob{
+          display: none;
+      }
+      .hide-desk{
+          display: block;
+      }
+      .section-container{
+          height: 30em;
+      }
+      .burger{
+        background-color: transparent;
+        color: #7ED957;
+        border: 0;
+        cursor: pointer;
+        font-size: 30px;
+        margin-left: 2.5em;
+      }
+      h2{
+          font-size: 2rem;
+          font-weight: 400;
+      }
+      .left-content > button{
+          padding: .5em 1.5em;
+          margin-right: 1em;
+      }
+      .left-content > button > a > span{
+        font-size: 1rem;
+    }
+    .container > .card{
+        height: 5em;
+        max-width: 100%;
+        width: 100%;
+        background-color: greenyellow;
+    }
+}
+/* ----------------------------------------------------------------------Tablet Design--------------------------------------------------------------- */
+@media only screen and (max-width:720px) and (min-width: 481px){
+    header{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 693px;
+      }
+      .navbar{
+        width: 100%;
+      }
+      .hide-desk{
+        display: block;
+    }
+      .hide-mob{
+          display: none;
+      }
+      .burger{
+        background-color: transparent;
+        color: #7ED957;
+        border: 0;
+        cursor: pointer;
+        font-size: 30px;
+        margin-left: 3.5em;
+      }
+      .left-content > button{
+        padding: 2em 3.5em;
+        margin-right: 1em;
+    }
+    .left-content > button > a > span{
+      font-size: 1rem;
+  }
+}
